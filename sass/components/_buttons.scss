@@ -1,0 +1,96 @@
+/* .contacts .button:first-child::after {
+  content: ;
+  background-image: url(../images/envelope.svg);
+  background-size: contain;
+  background-color: tomato;
+  } */
+
+.button-primary {
+  display: inline-block;
+  border-radius: 4px;
+  color: $title-text-color;
+  background-color: #f5f4fa;
+  border-color: transparent;
+  text-align: center;
+}
+
+.order-service {
+  --h: 50px;
+  /*   min-width: 200px; */
+  padding: 0 32px; /* гарантия отступов при увеличении длинны текста*/
+
+  height: var(--h); /* центрирование одной линии текста по вертикали */
+  line-height: var(--h); /* центрирование одной линии текста по вертикали */
+
+  cursor: pointer;
+
+  /* текст */
+
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  font-family: "Roboto", sans-serif;
+  text-align: center; /* центрирование  по горзонтали */
+
+  /* цвета */
+  color: $primary-white-color;
+  background: $accent-color;
+
+  /* украшения   */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+}
+
+div {
+  margin: 1rem;
+  text-align: center;
+}
+
+div {
+  margin: 1rem;
+  text-align: center;
+}
+
+.service {
+  --h: 50px;
+  /*   min-width: 200px; */
+  padding: 0 32px; /* гарантия отступов при увеличении длинны текста*/
+
+  height: var(--h); /* центрирование одной линии текста по вертикали */
+  line-height: var(--h); /* центрирование одной линии текста по вертикали */
+
+  cursor: pointer;
+
+  /* текст */
+
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  font-family: "Roboto", sans-serif;
+  text-align: center; /* центрирование  по горзонтали */
+
+  /* цвета */
+  color: $primary-text-color;
+  background: $primary-white-color;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* украшения   */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-white-color;
+  }
+}

@@ -1,0 +1,96 @@
+.employees {
+  padding-top: 95px;
+  padding-bottom: 95px;
+
+  .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.employees .list {
+  display: flex;
+  padding-top: 50px;
+}
+
+.employees .item {
+  background-color: $primary-white-color;
+  border-radius: 4px;
+  overflow: hidden;
+  min-width: 270px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+
+  &:not(:nth-last-child(-n + 1)) {
+    margin-right: 30px;
+  }
+}
+
+.employees .name {
+  @extend %Font500_16;
+  line-height: 1.19;
+  /* identical to box height */
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.employees .social-link-list {
+  list-style: none;
+  display: flex;
+  width: 206px;
+  margin: 24px 32px;
+}
+
+.social-item {
+  display: flex;
+
+  .link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $primary-white-color;
+    background-color: $primary-white-color;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+
+      .icon,
+      .icon {
+        fill: $primary-white-color;
+      }
+    }
+  }
+}
+.social-item .icon {
+  fill: $description-text-color;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

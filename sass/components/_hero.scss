@@ -1,0 +1,41 @@
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/Header.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  color: #ffffff;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 600px;
+  text-align: center;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .container {
+    display: inline-block;
+    margin: 200px 452px 200px 452px;
+  }
+  .title {
+    width: 696px;
+    height: 120px;
+    @extend %Font900_44;
+    line-height: 1.4;
+    /* or 136% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+}

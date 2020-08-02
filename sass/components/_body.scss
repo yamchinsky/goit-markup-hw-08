@@ -1,0 +1,30 @@
+.body {
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+* ::before,
+* ::after {
+  box-sizing: inherit;
+}
+
+.link {
+  color: $title-text-color;
+  text-decoration: none;
+  @extend %Font500_14;
+  line-height: 1.14;
+}
+
+.list {
+  list-style: none;
+}
+
+.button {
+  text-decoration: none;
+}
+
+.description {
+  color: $description-text-color;
+}

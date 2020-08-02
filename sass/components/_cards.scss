@@ -1,0 +1,46 @@
+.cards {
+  padding-top: 95px;
+  padding-bottom: 34px;
+
+  .container {
+    max-width: 1200px;
+    min-width: 1200px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .button-container {
+    display: flex;
+    padding-bottom: 50px;
+    margin: auto;
+
+    .button-primary {
+      min-height: 38px;
+      border-radius: 4px;
+    }
+  }
+}
+
+.label {
+  display: none;
+}
+
+.button-container .buttons-list {
+  @extend %Flex0margin;
+  justify-content: center;
+
+  & > li:not(:nth-last-child(-n + 1)) {
+    margin-right: 8px;
+  }
+}
+
+.button-item {
+  margin-right: 4px;
+  margin-left: 4px;
+  margin-bottom: 25px;
+  margin-top: 24px;
+  padding: 6px 22px;
+  min-width: 145px;
+  text-align: center;
+}
